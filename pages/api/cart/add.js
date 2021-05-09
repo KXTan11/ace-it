@@ -2,7 +2,6 @@ import addToCart from '../mockdata/cart/add_to_cart'
 
 async function handler(req, res) {
   const { product, brand, quantity } = req.body
-  console.log(req.body);
   const result = await addToCart(product && product.id, brand, quantity, req, res)
   res.json(result)
 }

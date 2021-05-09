@@ -75,8 +75,6 @@ const Subcategory = lazyProps => {
     for (let filter of filters) {
       const [name, value] = filter.split(':')
 
-      console.log(name, value)
-
       if (query[name]) {
         query[name] = `${query[name]},${value}`
       } else {
@@ -99,8 +97,6 @@ const Subcategory = lazyProps => {
     } else {
       delete query.sort
     }
-
-    console.log('query', query)
 
     return query
   }, [])

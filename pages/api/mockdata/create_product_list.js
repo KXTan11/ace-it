@@ -8,7 +8,6 @@ Object.defineProperty(exports, "__esModule", {
 export default createProductList;
 
 function createProductList(category) {
-  console.log(category)
   let currentcategory = category[0];
   let categories = createCategories();
   let products = createProduct();
